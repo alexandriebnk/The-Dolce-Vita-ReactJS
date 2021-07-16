@@ -1,0 +1,13 @@
+.nav-icon {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.fork {
+    background-color: blue;
+}
+
+.spoon {
+    background-color: yellow;
+}

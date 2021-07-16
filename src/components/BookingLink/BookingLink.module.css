@@ -1,0 +1,14 @@
+.booking-link {
+    /* mettre en display block version desktop*/
+    display: none;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: #E9CCA1;
+    border-bottom: 1px solid #E9CCA1;
+}

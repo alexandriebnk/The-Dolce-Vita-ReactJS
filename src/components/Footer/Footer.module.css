@@ -1,0 +1,14 @@
+.footer {
+    background-color: aquamarine;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    padding: 2.5rem;
+}
+
+.footer p {
+    font-size: 1.2rem;
+}
