@@ -1,11 +1,12 @@
 .booking-link {
-    /* mettre en display block version desktop*/
-    display: none;
+    /* mettre en display none version mobile*/
+
 }
 
 .link {
     text-decoration: none;
     color: black;
+    font-size: 1.2rem;
 }
 
 .link:hover {

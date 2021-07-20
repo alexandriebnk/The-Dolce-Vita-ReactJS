@@ -1,0 +1,14 @@
+.description {
+    /*background-color: chocolate;*/
+}
+
+.description h2 {
+    /*background-color: cornflowerblue;*/
+    font-size: 2rem;
+}
+
+.description p {
+    /*background-color: crimson;*/
+    font-size: 1.2rem;
+    line-height: 2rem;
+}

@@ -7,9 +7,9 @@ import NavIcon from "../NavIcon/NavIcon";
 const Header = () => {
   return (
     <div className={classes.header}>
-      <BookingLink />
-      <img src={Logo} className={classes.logo} alt="logo" />
       <NavIcon />
+      <img src={Logo} className={classes.logo} alt="logo" />
+      <BookingLink />
     </div>
   );
 };

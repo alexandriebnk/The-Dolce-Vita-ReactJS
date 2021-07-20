@@ -4,7 +4,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem;
+    width: 90%;
+    margin: auto;
+    padding: 4.5rem 0;
 }
 
 .logo {

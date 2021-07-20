@@ -1,0 +1,10 @@
+.input {
+    /*background-color: darkseagreen;*/
+    padding-bottom: 1.5rem;
+}
+
+.inputUI {
+    background-color: pink;
+    border: none;
+    margin-left: 3rem;
+}
