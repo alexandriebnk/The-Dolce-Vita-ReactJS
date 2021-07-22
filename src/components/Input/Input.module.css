@@ -1,10 +1,23 @@
 .input {
     /*background-color: darkseagreen;*/
-    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
 }
 
-.inputUI {
-    background-color: pink;
-    border: none;
-    margin-left: 3rem;
+.input-img {
+    /*background-color: grey;*/
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 3rem;
 }
+
+.input-element {
+    /*background-color: pink;*/
+    border: none;  
+}
+
+.input-element::placeholder {
+    color: rgb(158, 158, 158, .7);
+}
+

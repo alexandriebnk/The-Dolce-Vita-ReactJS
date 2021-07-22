@@ -1,26 +1,14 @@
-.form {
-    /*background-color: darksalmon;*/
-    padding-top: 3rem;
-}
-
-.people {
-    background-color: gold;
-}
-
-.people::before {
-        content: "";
-        
-        position: absolute;
-        left: 10px;
-        top: 0;
-        bottom: 0;
-        width: 20px;
-        background: url("../../assets/svg/guests.svg") center / contain no-repeat;
-      
-}
-
 .confirm-btn {
-    /*background-color: gold;*/
+    background-color: white;
+    color: #9E9E9E;
     display: block;
-    margin: 1.5rem auto;
+    margin: 6rem auto 0 auto;
+    border: none;
+    padding: 0 0;
+}
+
+.confirm-btn:hover {
+    color: #E9CCA1;
+    border-bottom: 1px solid #E9CCA1;
+    cursor: pointer;
 }

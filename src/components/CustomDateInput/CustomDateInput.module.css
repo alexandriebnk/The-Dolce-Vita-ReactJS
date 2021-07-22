@@ -1,0 +1,22 @@
+.date {
+    /*background-color: indianred;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.date-img {
+    /*background-color: orchid;*/
+     height: 2.5rem;
+     width: 2.5rem;
+     margin-right: 3rem;
+}
+
+.day {
+    margin-right: 1.2rem;
+}
+
+.month {
+    margin-right: 1.2rem;
+}

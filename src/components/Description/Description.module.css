@@ -5,10 +5,11 @@
 .description h2 {
     /*background-color: cornflowerblue;*/
     font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .description p {
     /*background-color: crimson;*/
     font-size: 1.2rem;
-    line-height: 2rem;
+    line-height: 2.3rem;
 }

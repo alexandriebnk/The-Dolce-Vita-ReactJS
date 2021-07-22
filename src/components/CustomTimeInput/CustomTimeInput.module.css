@@ -1,0 +1,27 @@
+.time {
+    /*background-color: lightgreen;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.time-img {
+     /*background-color: khaki;*/
+     height: 2.5rem;
+     width: 2.5rem;
+     margin-right: 3rem;
+}
+
+.hours {
+    margin-right: .6rem;
+}
+
+.separator {
+    margin-right: .6rem;
+}
+
+.minutes {
+    margin-right: .6rem;
+}
+

@@ -1,0 +1,23 @@
+.reservation-user {
+    /*background-color: pink;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.reservation-presentation {
+    /*background-color: peru;*/
+    width: 50%;
+    padding: 6rem 0 6rem 5rem;
+}
+
+.reservation-id {
+    /*background-color: pink;*/
+    width: 85%;
+}
+
+.reservation-form {
+    /*background-color: lightseagreen;*/
+    margin-top: 3rem;
+}

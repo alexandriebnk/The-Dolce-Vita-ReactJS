@@ -1,0 +1,27 @@
+.reservation {
+  /*background-color: pink;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 90vh;
+  width: 90%;
+  margin: auto;
+}
+
+.reservation-p {
+  /*background-color: red;*/
+  display: block;
+  font-size: 4rem;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.reservation-frame {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 100%;
+}

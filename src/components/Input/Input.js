@@ -1,35 +1,34 @@
 import React, { useState, useEffect } from "react";
 import classes from "./Input.module.css";
-import PeopleImg from "../../assets/svg/guests.svg";
-import CalendarImg from "../../assets/svg/calendar.svg";
-import ClockImg from "../../assets/svg/clock.svg";
 import NameImg from "../../assets/svg/name.svg";
 import PhoneImg from "../../assets/svg/phone.svg";
 import EmailImg from "../../assets/svg/email.svg";
 
 const Input = (props) => {
-  console.log(props);
-  const [imageSrc, setImageSrc] = useState({ src: PeopleImg, alt: "guests" });
+  const [inputDatas, setInputDatas] = useState({
+    src: NameImg,
+    alt: "name",
+    placeholder: "Name",
+  });
 
   useEffect(() => {
     switch (props.type) {
-      case "number":
-        setImageSrc({ src: PeopleImg, alt: "guests" });
-        break;
-      case "date":
-        setImageSrc({ src: CalendarImg, alt: "calendar" });
-        break;
-      case "time":
-        setImageSrc({ src: ClockImg, alt: "time" });
-        break;
       case "text":
-        setImageSrc({ src: NameImg, alt: "name" });
+        setInputDatas({ src: NameImg, alt: "name", placeholder: "Name" });
         break;
       case "tel":
-        setImageSrc({ src: PhoneImg, alt: "tel" });
+        setInputDatas({
+          src: PhoneImg,
+          alt: "tel",
+          placeholder: "650-560-75644",
+        });
         break;
       case "email":
-        setImageSrc({ src: EmailImg, alt: "email" });
+        setInputDatas({
+          src: EmailImg,
+          alt: "email",
+          placeholder: "your@email.com",
+        });
         break;
       default:
         break;
@@ -38,8 +37,16 @@ const Input = (props) => {
 
   return (
     <div className={classes.input}>
-      <img src={imageSrc.src} alt={imageSrc.alt} />
-      <input className={classes.inputUI} {...props} />
+      <img
+        src={inputDatas.src}
+        alt={inputDatas.alt}
+        className={classes["input-img"]}
+      />
+      <input
+        className={classes["input-element"]}
+        {...props}
+        placeholder={inputDatas.placeholder}
+      />
     </div>
   );
 };
