@@ -19,9 +19,29 @@
 }
 
 .reservation-frame {
-  display: flex;
   position: relative;
-  flex-direction: row;
   border: 1px solid black;
   width: 100%;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .reservation {
+    height: auto;
+    min-height: 80vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .reservation {
+    width: 100%;
+  }
+  .reservation-p {
+      display: none;
+  }
+  .reservation-frame {
+    border: none;
+  }
+}
+

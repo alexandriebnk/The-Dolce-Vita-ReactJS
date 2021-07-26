@@ -4,12 +4,24 @@
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 2.5rem;
 }
 
 .footer p {
     font-size: 1.2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .footer {
+        margin-top: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        width: 100%;
+    }
 }

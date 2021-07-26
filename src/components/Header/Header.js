@@ -4,12 +4,14 @@ import BookingLink from "../BookingLink/BookingLink";
 import Logo from "../../assets/svg/logo.svg";
 import NavIcon from "../NavIcon/NavIcon";
 
-const Header = () => {
+const Header = ({ displayMenu, menuIsDisplayed }) => {
   return (
     <div className={classes.header}>
-      <NavIcon />
+      <NavIcon displayMenu={displayMenu} menuIsDisplayed={menuIsDisplayed} />
       <img src={Logo} className={classes.logo} alt="logo" />
-      <BookingLink />
+      <div className={classes.link}>
+        <BookingLink />
+      </div>
     </div>
   );
 };

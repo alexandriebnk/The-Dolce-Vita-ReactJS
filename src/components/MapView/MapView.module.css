@@ -1,11 +1,11 @@
-.map-container {
+.map {
     position: absolute;
-    width: 50%;
+    width: 100%;
     height: 100%;
     z-index: 0;
 }
 
-.map-container::before {
+.map::before {
     content: "";
     background-color: rgba(233,	204, 161, .4);
     position: absolute;
@@ -15,5 +15,22 @@
     left: 0;
     mix-blend-mode: color;
     z-index: 10;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .map {
+        /*background-color: pink;*/
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .map {
+        height: 100%;
+    }
 }
 

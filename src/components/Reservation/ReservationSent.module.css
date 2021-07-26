@@ -1,9 +1,11 @@
 .reservation-done {
     /*background-color: cyan;*/
-    display: block;
+    position: absolute;
     width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    margin: 17rem auto 14rem auto;
 }
 
 .reservation-img {
@@ -20,4 +22,12 @@
     margin: 3.5rem auto 0 auto;
 }
 
+/* MEDIA QUERIES */
 
+@media (max-width: 768px) {
+    .reservation-done {
+        width: 70%;
+    }
+  }
+  
+ 
