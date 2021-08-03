@@ -1,0 +1,8 @@
+.arrow {
+    height: 3rem;
+    width: 3rem;
+}
+
+.right {
+    transform: rotate(180deg);
+}

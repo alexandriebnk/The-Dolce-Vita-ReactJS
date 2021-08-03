@@ -6,13 +6,15 @@ import NavIcon from "../NavIcon/NavIcon";
 
 const Header = ({ displayMenu, menuIsDisplayed }) => {
   return (
-    <div className={classes.header}>
+    <header className={classes.header}>
       <NavIcon displayMenu={displayMenu} menuIsDisplayed={menuIsDisplayed} />
-      <img src={Logo} className={classes.logo} alt="logo" />
+      <h1 aria-label="The Dolce Vita">
+        <img src={Logo} className={classes.logo} alt="logo" />
+      </h1>
       <div className={classes.link}>
         <BookingLink />
       </div>
-    </div>
+    </header>
   );
 };
 

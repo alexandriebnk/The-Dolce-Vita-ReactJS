@@ -1,0 +1,49 @@
+.carrousel {
+    /*background-color: pink;*/
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+}
+
+.carrousel-main {
+    /*background-color: aquamarine;*/
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 75%;
+}
+
+.carrousel-item:nth-child(1) p {
+    font-size: 4rem;
+}
+
+.carrousel-item:nth-child(1) p span {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.carrousel-item:nth-child(2) p,
+.carrousel-item:nth-child(3) p {
+    font-size: 2.5rem;
+}
+
+.carrousel-item:nth-child(2) p span,
+.carrousel-item:nth-child(3) p span{
+    font-size: 1.6rem;
+    margin-bottom: .7rem;
+}
+
+.carrousel-item:nth-child(1) img {
+    margin-right: 1rem;
+}
+
+.carrousel-item:nth-child(2) img,
+.carrousel-item:nth-child(3) img{
+    display: none;
+}
+

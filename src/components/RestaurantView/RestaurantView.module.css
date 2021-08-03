@@ -1,0 +1,55 @@
+.restaurant-view {
+    /*background-color: yellow;*/
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.restaurant-view-title {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    margin-right: 1rem;
+}
+
+.restaurant-view-title span {
+    color: rgba(0, 0, 0, .7);
+}
+
+.restaurant-view-img {
+    height: 100%;
+}
+
+/*
+
+.carrousel-part {
+    /*background-color: lightseagreen;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carrousel-bar-img {
+    display: none;
+}
+
+.carrousel-pool-img {
+    display: none;
+}*/
+

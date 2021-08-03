@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Description.module.css";
 
-const Description = (props) => {
+const Description = () => {
   return (
     <div className={classes.description}>
       <h2>Le titre de cette description</h2>

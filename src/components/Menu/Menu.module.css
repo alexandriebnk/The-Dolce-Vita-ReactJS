@@ -1,15 +1,14 @@
 .menu {
     background-color: #E9CCA1;
     position: absolute;
-    height: 90vh;
-    width: 90%;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    border: 2rem solid white;
     z-index: 100;
 }
 
 .menu-list {
-    /*background-color: lightgreen;*/
+    background-color: lightgreen;
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -40,4 +39,21 @@
     font-weight: normal;
     text-transform: uppercase;
     margin-top: 2rem;  
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .menu-list {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-item {
+        width: 50%; 
+    }
+    .menu-list {
+        top: 35%;
+    }
 }

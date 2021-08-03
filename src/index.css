@@ -24,3 +24,7 @@ input:focus {
   outline: none;
 }
 
+#app {
+  position: relative;
+}
+

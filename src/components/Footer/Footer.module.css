@@ -1,11 +1,13 @@
 .footer {
-    background-color: aquamarine;
+    background-color: plum;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
-    padding: 2.5rem;
+    align-items: center;
+    height: 12rem;
+    width: 100%;
+    padding: 4.5rem;
+    z-index: 200;
 }
 
 .footer p {
@@ -23,5 +25,6 @@
 @media (max-width: 576px) {
     .footer {
         width: 100%;
+        padding: 0 3rem;
     }
 }

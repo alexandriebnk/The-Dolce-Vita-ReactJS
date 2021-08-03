@@ -1,0 +1,12 @@
+/*.content {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}*/
+
+.wrapper-content {
+    /*background-color: maroon;*/
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
