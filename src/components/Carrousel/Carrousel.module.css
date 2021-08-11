@@ -2,8 +2,7 @@
     /*background-color: pink;*/
     position: relative;
     height: 100vh;
-    width: 50%;
-    margin: auto;
+    width: 100%;
 }
 
 .carrousel-main {
@@ -15,35 +14,56 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 80%;
-    width: 75%;
+    width: 35%;
 }
 
-.carrousel-item:nth-child(1) p {
-    font-size: 4rem;
+.carrousel-item h2 {
+    font-weight: 300;
 }
 
-.carrousel-item:nth-child(1) p span {
+.carrousel-item:nth-child(1) h2 {
+    font-size: 3.5rem;
+    margin-right: 1.5rem;
+}
+
+.carrousel-item:nth-child(1) h2 span {
     font-size: 2.2rem;
     margin-bottom: 1rem;
 }
 
-.carrousel-item:nth-child(2) p,
-.carrousel-item:nth-child(3) p {
+.carrousel-item:nth-child(2) h2,
+.carrousel-item:nth-child(3) h2 {
+    color: rgba(0, 0, 0, .7);
     font-size: 2.5rem;
 }
 
-.carrousel-item:nth-child(2) p span,
-.carrousel-item:nth-child(3) p span{
+.carrousel-item:nth-child(2) h2 span,
+.carrousel-item:nth-child(3) h2 span{
     font-size: 1.6rem;
     margin-bottom: .7rem;
 }
 
-.carrousel-item:nth-child(1) img {
-    margin-right: 1rem;
-}
-
 .carrousel-item:nth-child(2) img,
-.carrousel-item:nth-child(3) img{
+.carrousel-item:nth-child(3) img,
+.carrousel-item:nth-child(2) aside,
+.carrousel-item:nth-child(3) aside  {
     display: none;
 }
+
+.carrousel-item:nth-child(2) {
+    margin-left: 1.5rem;
+    margin-right: .5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .carrousel {
+        width: 100%;
+    }
+    .carrousel-main {
+        width: 90%;
+    }
+}
+
 

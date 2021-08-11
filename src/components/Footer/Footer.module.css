@@ -1,5 +1,5 @@
 .footer {
-    background-color: plum;
+    /*background-color: plum;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,7 +7,6 @@
     height: 12rem;
     width: 100%;
     padding: 4.5rem;
-    z-index: 200;
 }
 
 .footer p {

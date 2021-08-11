@@ -1,14 +1,16 @@
 .menu {
     background-color: #E9CCA1;
-    position: absolute;
-    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
     width: 100%;
-    border: 2rem solid white;
+    border: 1.5rem solid white;
     z-index: 100;
 }
 
 .menu-list {
-    background-color: lightgreen;
+    /*background-color: lightgreen;*/
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -33,7 +35,7 @@
     text-decoration: underline;
 }
 
-.menu-item h3 {
+.menu-item h4 {
     color: black;
     font-size: 1.4rem;
     font-weight: normal;
@@ -52,8 +54,5 @@
 @media (max-width: 576px) {
     .menu-item {
         width: 50%; 
-    }
-    .menu-list {
-        top: 35%;
     }
 }

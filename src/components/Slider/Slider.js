@@ -1,15 +1,16 @@
 import React from "react";
 import classes from "./Slider.module.css";
 import Arrow from "../Arrow/Arrow";
-import DishItem from "../Dish/DishItem";
+import DishItem from "../DishItem/DishItem";
 
-const Slider = () => {
+const Slider = ({ datas, category }) => {
   const nextSlide = () => {
     console.log("next");
   };
   const previousSlide = () => {
     console.log("previous");
   };
+
   return (
     <div className={classes.slider}>
       <div className={classes["slider-arrows"]}>
@@ -21,24 +22,14 @@ const Slider = () => {
         </div>
       </div>
       <div className={classes["slider-items"]}>
-        <div className={classes["slider-items-child"]}>
-          <DishItem />
-        </div>
-        <div className={classes["slider-items-child"]}>
-          <DishItem />
-        </div>
-        <div className={classes["slider-items-child"]}>
-          <DishItem />
-        </div>
-        <div className={classes["slider-items-child"]}>
-          <DishItem />
-        </div>
-        <div className={classes["slider-items-child"]}>
-          <DishItem />
-        </div>
-        {/*<DishItem />
-        <DishItem />
-        <DishItem />*/}
+        {datas.map((item, index) => (
+          <div
+            className={classes["slider-items-child"]}
+            key={`${item.title}-${index}`}
+          >
+            <DishItem item={item} category={category} />
+          </div>
+        ))}
       </div>
     </div>
   );

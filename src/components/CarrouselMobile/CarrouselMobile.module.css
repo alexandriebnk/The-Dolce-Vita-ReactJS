@@ -1,0 +1,64 @@
+.carrousel-mobile-wrapper {
+    /*background-color: blueviolet;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 95%;
+    margin-left: 5%;
+}
+
+.carrousel-mobile-titles {
+    /*background-color: aquamarine;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75%;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+}
+
+.carrousel-mobile-title {
+    font-weight: 300;
+}
+
+.carrousel-mobile-title:nth-child(1) {
+    font-size: 3.5rem;
+}
+
+.carrousel-mobile-title:nth-child(1) span {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.carrousel-mobile-title:nth-child(2),
+.carrousel-mobile-title:nth-child(3) {
+    color: rgba(0, 0, 0, .7);
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.carrousel-mobile-title:nth-child(2) span,
+.carrousel-mobile-title:nth-child(3) span{
+    font-size: 1.4rem;
+    margin-bottom: .7rem;
+}
+
+.carrousel-mobile-img-container {
+    /*background-color: brown;*/
+    position: relative;
+    height: 55rem;
+    width: 80%;
+}
+
+.carrousel-mobile-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carrousel-mobile-content {
+    margin-top: 4rem;
+}

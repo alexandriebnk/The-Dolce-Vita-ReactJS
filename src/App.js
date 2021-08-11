@@ -1,14 +1,17 @@
-import React, { Fragment, useState } from "react";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
 import Carrousel from "./components/Carrousel/Carrousel";
+import Content from "./components/Content/Content";
+
 import Footer from "./components/Footer/Footer";
-import classes from "./App.module.css";
+
+import ReservationFrame from "./components/ReservationFrame/ReservationFrame";
 {
   /*
-import Slider from "./components/Slider/Slider";
-import Grid from "./components/Grid/Grid";
-import ReservationFrame from "./components/ReservationFrame/ReservationFrame";
+  import CarrouselMobile from "./components/CarrouselMobile/CarrouselMobile";
+  import ReservationFrame from "./components/ReservationFrame/ReservationFrame";
 */
 }
 
@@ -19,20 +22,27 @@ function App() {
     setMenuIsDisplayed(!menuIsDisplayed);
   };
 
+  useEffect(() => {
+    if (menuIsDisplayed) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [menuIsDisplayed]);
+
   return (
-    <Fragment>
+    <Router>
       <Header displayMenu={displayMenu} menuIsDisplayed={menuIsDisplayed} />
-      <div>{menuIsDisplayed ? <Menu /> : null}</div>
-      <main className={classes.content}>
-        <Carrousel />
-        {/*<ReservationFrame />
-        <div className={classes["wrapper-content"]}>
-          <Slider />
-          <Grid />
-        </div>*/}
+      {menuIsDisplayed ? <Menu /> : null}
+      <main>
+        <Switch>
+          <Route path="/" exact component={Carrousel} />
+          <Route path="/book-a-table" component={ReservationFrame} />
+          <Route path="/menu/:category" component={Content} />
+        </Switch>
       </main>
       <Footer />
-    </Fragment>
+    </Router>
   );
 }
 

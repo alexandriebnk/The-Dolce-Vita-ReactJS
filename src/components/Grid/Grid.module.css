@@ -30,9 +30,6 @@
 }
 
 @media (max-width: 576px) {
-    .grid {
-        border: 2px solid red;
-    }
     .grid-items {
         flex-direction: column;
         flex-wrap: nowrap;

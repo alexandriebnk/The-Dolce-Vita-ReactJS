@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Grid.module.css";
-import DishItem from "../Dish/DishItem";
+import DishItem from "../DishItem/DishItem";
 
 const Grid = () => {
   return (

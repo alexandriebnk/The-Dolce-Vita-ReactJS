@@ -1,20 +1,21 @@
 import React from "react";
 import classes from "./InfosLayout.module.css";
 import Description from "../Description/Description";
-import Salad from "../../assets/svg/salads.svg";
 
-const InfosLayout = ({ infosLayoutIcon }) => {
+const InfosLayout = ({ title, text, price, category }) => {
   return (
     <div className={classes["infos-layout"]}>
       <div className={classes["infos-layout-description"]}>
-        <Description />
-        <div className={classes["infos-layout-price"]}>$18.00</div>
+        <Description title={title} text={text} />
+        <p className={classes["infos-layout-price"]}>{price}</p>
       </div>
-      <img
-        src={Salad}
-        className={classes["infos-layout-icon"]}
-        alt="salad-icon"
-      />
+      <div className={classes["infos-layout-icon-container"]}>
+        <img
+          src={`/images/svg/${category}.svg`}
+          className={classes["infos-layout-icon"]}
+          alt="icon"
+        />
+      </div>
     </div>
   );
 };

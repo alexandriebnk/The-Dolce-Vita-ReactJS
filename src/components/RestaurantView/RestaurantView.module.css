@@ -3,53 +3,65 @@
     display: flex;
     flex-direction: row;
     height: 100%;
+    width: 100%;
 }
 
 .restaurant-view-title {
     writing-mode: tb-rl;
     transform: rotate(-180deg);
-    margin-right: 1rem;
 }
 
 .restaurant-view-title span {
     color: rgba(0, 0, 0, .7);
 }
 
+.restaurant-view-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
 .restaurant-view-img {
     height: 100%;
+    width: 100%;
 }
 
-/*
-
-.carrousel-part {
-    /*background-color: lightseagreen;
-    display: flex;
-    flex-direction: row;
-    margin-right: 1rem;
+.restaurant-view-infos-layout {
+    background-color: white;
+    position: absolute;
+    height: 90%;
+    width: 87%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    outline: 3px solid white;
+    outline-offset: .4rem;
+    padding: 2rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.carrousel-bar-img {
+.restaurant-view-infos-layout p {
     display: none;
 }
 
-.carrousel-pool-img {
-    display: none;
-}*/
+.restaurant-view-infos-layout aside {
+    line-height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

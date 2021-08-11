@@ -1,16 +1,11 @@
 import React from "react";
 import classes from "./Description.module.css";
 
-const Description = () => {
+const Description = ({ title, text }) => {
   return (
     <div className={classes.description}>
-      <h2>Le titre de cette description</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s. Lorem Ipsum has been the industry's standard dummy text
-        ever since the 1500s
-      </p>
+      <h3>{title}</h3>
+      <aside>{text}</aside>
     </div>
   );
 };
