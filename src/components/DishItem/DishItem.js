@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./DishItem.module.css";
 import InfosLayout from "../InfosLayout/InfosLayout";
 
-const DishItem = ({ item, category }) => {
+const DishItem = ({ item, icon }) => {
   return (
     <div className={classes["dish-item"]}>
       <img
@@ -15,7 +15,7 @@ const DishItem = ({ item, category }) => {
           title={item.title}
           text={item.text}
           price={item.price}
-          category={category}
+          icon={icon}
         />
       </div>
     </div>

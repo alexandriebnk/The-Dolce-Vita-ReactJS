@@ -21,28 +21,23 @@
 
 .carrousel-mobile-title {
     font-weight: 300;
-}
-
-.carrousel-mobile-title:nth-child(1) {
-    font-size: 3.5rem;
-}
-
-.carrousel-mobile-title:nth-child(1) span {
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-}
-
-.carrousel-mobile-title:nth-child(2),
-.carrousel-mobile-title:nth-child(3) {
     color: rgba(0, 0, 0, .7);
     font-size: 2rem;
     margin-top: 2rem;
 }
 
-.carrousel-mobile-title:nth-child(2) span,
-.carrousel-mobile-title:nth-child(3) span{
+.carrousel-mobile-title span {
     font-size: 1.4rem;
     margin-bottom: .7rem;
+}
+
+.active-title {
+    font-size: 3.5rem !important;
+}
+
+.active-title span {
+    font-size: 1.7rem !important;
+    margin-bottom: 1rem !important;
 }
 
 .carrousel-mobile-img-container {
@@ -57,8 +52,21 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    opacity: 0;
+}
+
+.active-img {
+    opacity: 1;
 }
 
 .carrousel-mobile-content {
     margin-top: 4rem;
+}
+
+.carrousel-mobile-view {
+    display: none;
+}
+
+.active-view {
+    display: block;
 }

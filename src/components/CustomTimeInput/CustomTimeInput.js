@@ -1,11 +1,15 @@
 import React from "react";
 import classes from "./CustomTimeInput.module.css";
-import ClockImg from "../../assets/svg/clock.svg";
+import datas from "../../assets/datas";
 
 const CustomTimeInput = () => {
   return (
     <div className={classes.time}>
-      <img src={ClockImg} alt="clock" className={classes["time-img"]} />
+      <img
+        src={datas.reservation.icons.time.icon}
+        alt="time"
+        className={classes["time-img"]}
+      />
       <div className={classes.hours}>
         <select>
           <option value="12">12</option>

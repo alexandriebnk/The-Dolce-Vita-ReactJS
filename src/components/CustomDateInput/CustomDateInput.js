@@ -1,11 +1,15 @@
 import React from "react";
 import classes from "./CustomDateInput.module.css";
-import CalendarImg from "../../assets/svg/calendar.svg";
+import datas from "../../assets/datas";
 
 const CustomDateInput = () => {
   return (
     <div className={classes.date}>
-      <img src={CalendarImg} alt="calendar" className={classes["date-img"]} />
+      <img
+        src={datas.reservation.icons.calendar.icon}
+        alt="calendar"
+        className={classes["date-img"]}
+      />
       <div className={classes.day}>
         <select>
           <option value="01">01</option>

@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 import classes from "./Input.module.css";
-import NameImg from "../../assets/svg/name.svg";
-import PhoneImg from "../../assets/svg/phone.svg";
-import EmailImg from "../../assets/svg/email.svg";
+import datas from "../../assets/datas";
 
 const Input = (props) => {
   const [inputDatas, setInputDatas] = useState({
-    src: NameImg,
+    src: datas.reservation.icons.name.icon,
     alt: "name",
     placeholder: "Name",
   });
@@ -14,18 +12,22 @@ const Input = (props) => {
   useEffect(() => {
     switch (props.type) {
       case "text":
-        setInputDatas({ src: NameImg, alt: "name", placeholder: "Name" });
+        setInputDatas({
+          src: datas.reservation.icons.name.icon,
+          alt: "name",
+          placeholder: "Name",
+        });
         break;
       case "tel":
         setInputDatas({
-          src: PhoneImg,
+          src: datas.reservation.icons.phone.icon,
           alt: "tel",
           placeholder: "650-560-75644",
         });
         break;
       case "email":
         setInputDatas({
-          src: EmailImg,
+          src: datas.reservation.icons.email.icon,
           alt: "email",
           placeholder: "your@email.com",
         });

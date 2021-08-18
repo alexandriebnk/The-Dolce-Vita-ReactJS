@@ -1,5 +1,5 @@
 .footer {
-    /*background-color: plum;*/
+    background-color: plum;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

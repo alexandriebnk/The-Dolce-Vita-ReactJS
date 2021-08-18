@@ -3,7 +3,7 @@ import classes from "./Slider.module.css";
 import Arrow from "../Arrow/Arrow";
 import DishItem from "../DishItem/DishItem";
 
-const Slider = ({ datas, category }) => {
+const Slider = ({ datas }) => {
   const nextSlide = () => {
     console.log("next");
   };
@@ -22,12 +22,12 @@ const Slider = ({ datas, category }) => {
         </div>
       </div>
       <div className={classes["slider-items"]}>
-        {datas.map((item, index) => (
+        {datas.items.map((item, index) => (
           <div
             className={classes["slider-items-child"]}
             key={`${item.title}-${index}`}
           >
-            <DishItem item={item} category={category} />
+            <DishItem item={item} icon={datas.icon} />
           </div>
         ))}
       </div>

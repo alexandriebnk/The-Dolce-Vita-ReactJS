@@ -10,5 +10,3 @@ const ConfirmButton = ({ toggle }) => {
 };
 
 export default ConfirmButton;
-
-<input></input>;
