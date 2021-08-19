@@ -17,39 +17,6 @@
     width: 35%;
 }
 
-.carrousel-item h2 {
-    font-weight: 300;
-}
-
-.carrousel-item:nth-child(1) h2 {
-    font-size: 3.5rem;
-    margin-right: 1.5rem;
-}
-
-.carrousel-item:nth-child(1) h2 span {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-}
-
-.carrousel-item:nth-child(2) h2,
-.carrousel-item:nth-child(3) h2 {
-    color: rgba(0, 0, 0, .7);
-    font-size: 2.5rem;
-}
-
-.carrousel-item:nth-child(2) h2 span,
-.carrousel-item:nth-child(3) h2 span{
-    font-size: 1.6rem;
-    margin-bottom: .7rem;
-}
-
-.carrousel-item:nth-child(2) img,
-.carrousel-item:nth-child(3) img,
-.carrousel-item:nth-child(2) aside,
-.carrousel-item:nth-child(3) aside  {
-    display: none;
-}
-
 .carrousel-item:nth-child(2) {
     margin-left: 1.5rem;
     margin-right: .5rem;

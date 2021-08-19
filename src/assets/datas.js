@@ -17,7 +17,7 @@ const datas = {
       type: "Bar",
       src: "/images/carrousel/img/bar.jpg",
       title: "Good Drink",
-      text: "Enter this magical place and discover the intriguing cocktail bar of the Dolce Vita. Inspired by a creative concept, the spark born from the fusion of the energy of Los Angeles and Copacabana, the bar is set ablaze after dark, Thursday through Saturday, from 7:00 p.m. to 3:00 a.m. Now is the time to find out where the festivities are taking place",
+      text: "Enter this magical place and discover the intriguing cocktail bar of the Dolce Vita. Inspired by a creative concept, the spark born from the fusion of the energy of Los Angeles and Copacabana, the bar is set ablaze after dark, from 7:00 p.m. to 3:00 a.m. Now is the time to find out where the festivities are taking place",
       icon: "/images/carrousel/svg/bar.svg",
     },
     {

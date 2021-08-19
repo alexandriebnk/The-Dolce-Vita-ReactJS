@@ -43,20 +43,23 @@
 @media (max-width: 576px) {
     .infos-layout {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     .infos-layout-description {
         /*background-color: deepskyblue;*/
         font-size: 1.5rem;
         line-height: 2.5rem;
         height: 100%;
-        width: 100%;
+        width: 83%;
+        top: 42%;
+        left: 20%;
+        
     }
     .infos-layout-icon-container {
         /*background-color: deeppink;*/
+        position: relative;
         height: 6rem;
         width: 6rem;
-        right: 0;
     }
     .infos-layout-icon {
         height: 100%;

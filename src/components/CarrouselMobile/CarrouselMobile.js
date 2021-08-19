@@ -36,7 +36,6 @@ const CarrouselMobile = () => {
           ))}
         </div>
       </div>
-
       <div className={classes["carrousel-mobile-content"]}>
         {datas.carrousel.map((item, index) => (
           <div
