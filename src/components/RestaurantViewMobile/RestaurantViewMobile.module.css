@@ -18,6 +18,8 @@
     left: 20%;
 }
 
+/* MEDIA QUERIES */
+
 @media (max-width: 576px) {
     .restaurant-view-mobile-infos-layout {
         margin-bottom: 3rem;

@@ -69,7 +69,7 @@
     }
 }
 
-    @media (max-width: 576px) {
+@media (max-width: 576px) {
     .reservation-presentation {
         /*background-color: yellow;*/
         flex-direction: column;

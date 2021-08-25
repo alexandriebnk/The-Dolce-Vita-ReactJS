@@ -1,54 +1,12 @@
 .restaurant-view {
-    background-color: yellow;
+    /*background-color: yellow;*/
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 100%;
 }
 
-.restaurant-view-title {
-    color: rgba(0, 0, 0, .7);
-    font-size: 2.5rem;
-    font-weight: 300;
-    writing-mode: tb-rl;
-    transform: rotate(-180deg);
-    cursor: pointer;
-}
-
-.restaurant-view-title span {
-    color: rgba(0, 0, 0, .7);
-    font-size: 1.6rem;
-    margin-bottom: .7rem;
-}
-
-.active-title {
-    font-size: 3.5rem !important;
-    margin-right: 1.5rem !important;
-}
-
-.active-title span {
-    font-size: 2.2rem !important;
-    margin-bottom: 1rem !important;
-}
-
-.restaurant-view-content {
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
-.restaurant-view-img {
-    display: none;
-    height: 100%;
-    width: 100%;
-}
-
-.active-img {
-    display: block !important;
-}
-
 .restaurant-view-infos-layout {
-    display: none;
     background-color: white;
     position: absolute;
     height: 90%;
@@ -59,16 +17,21 @@
     outline: 3px solid white;
     outline-offset: .4rem;
     padding: 2rem;
-    line-height: 2rem;
 }
 
 .active-layout {
     display: block !important;
 }
 
+/* MEDIA QUERIES */
 
-
-
+@media (min-width: 1680px) {
+    .restaurant-view-infos-layout {  
+        outline: 10px solid white;
+        outline-offset: 1rem;
+        padding: 4rem;
+    }
+}
 
 
 

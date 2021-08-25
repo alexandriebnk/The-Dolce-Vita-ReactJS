@@ -9,3 +9,10 @@
     border-bottom: 1px solid #E9CCA1;
 }
 
+/* MEDIA QUERIES */
+
+@media (min-width: 1680px) {
+    .link {
+        font-size: 2.5rem;
+    }
+}

@@ -66,3 +66,11 @@
         width: 100%;
     } 
 }
+
+@media (min-width: 1680px) {
+    .infos-layout-icon {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+

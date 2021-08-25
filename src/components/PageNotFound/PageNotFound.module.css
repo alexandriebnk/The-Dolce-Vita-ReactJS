@@ -1,0 +1,98 @@
+.page {
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background:
+    linear-gradient(200deg, #E9CCA1, rgba(255,0,0,0) 70%),
+    linear-gradient(227deg, #a66d0395, rgba(0,255,0,0) 70%),
+    linear-gradient(217deg, #E9CCA1, rgba(255,0,0,0) 70%),
+    linear-gradient(127deg, #A66D03, rgba(0,255,0,0) 70%);
+}
+
+.page-block {
+    background-color: white;
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-content {
+    /*background-color: aquamarine;*/
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 60%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.page-404 {
+    background:
+    linear-gradient(200deg, #E9CCA1, rgba(255,0,0,0) 70%),
+    linear-gradient(227deg, #a66d0395, rgba(0,255,0,0) 70%),
+    linear-gradient(217deg, #E9CCA1, rgba(255,0,0,0) 70%),
+    linear-gradient(127deg, #A66D03, rgba(0,255,0,0) 70%);
+    font-size: 20rem;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-message {
+    /*background-color: lightsalmon;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    letter-spacing: .4rem;
+}
+
+.page-message-text {
+    /*background-color: blue;*/
+    color: #9E9E9E;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.page-message-link a {
+    /*background-color: turquoise;*/
+    color: #E9CCA1;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.page-message-link-arrow::before {
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: .8rem solid #E9CCA1;
+    border-top: .8rem solid transparent;
+    border-bottom: .8rem solid transparent;
+    vertical-align: middle;
+}
+
+.page-message-link-arrow::after {
+    background: #E9CCA1;
+    display: inline-block;
+    content: "";
+    width: 2rem;
+    height: .2rem;
+    vertical-align: middle;
+    margin-right: 1.5rem;
+}
+
+
+
+
+

@@ -7,6 +7,7 @@ const datas = {
   },
   carrousel: [
     {
+      id: "A1",
       type: "Restaurant",
       src: "/images/carrousel/img/restaurant.jpg",
       title: "Good Food",
@@ -14,6 +15,7 @@ const datas = {
       icon: "/images/carrousel/svg/restaurant.svg",
     },
     {
+      id: "B2",
       type: "Bar",
       src: "/images/carrousel/img/bar.jpg",
       title: "Good Drink",
@@ -21,6 +23,7 @@ const datas = {
       icon: "/images/carrousel/svg/bar.svg",
     },
     {
+      id: "C3",
       type: "Pool",
       src: "/images/carrousel/img/pool.jpg",
       title: "Good Mood",

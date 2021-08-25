@@ -1,5 +1,5 @@
 .reservation-done {
-    background-color: cyan;
+    /*background-color: cyan;*/
     position: absolute;
     width: 40%;
     top: 50%;
@@ -9,20 +9,15 @@
 }
 
 .reservation-img {
-    background-color: crimson;
+    /*background-color: crimson;*/
     color: #A66D03;
     height: 6rem;
     width: 6rem;
     margin-bottom: 2.5rem;
 }
 
-.reservation-description {
-    background-color: palevioletred;
-    
-}
-
 .reservation-close {
-    background-color: green;
+    /*background-color: green;*/
     width: 8%;
     margin: 3.5rem auto 0 auto;
 }
@@ -33,6 +28,6 @@
     .reservation-done {
         width: 70%;
     }
-  }
+}
   
  

@@ -1,10 +1,9 @@
 import React from "react";
 import classes from "./Arrow.module.css";
 
-const Arrow = ({ direction, clickCallback }) => {
+const Arrow = ({ direction }) => {
   return (
     <svg
-      onClick={clickCallback}
       className={`${classes.arrow} ${
         direction === "left" ? classes.left : classes.right
       }`}

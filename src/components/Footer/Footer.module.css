@@ -1,5 +1,5 @@
 .footer {
-    background-color: plum;
+    /*background-color: plum;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,5 +25,19 @@
     .footer {
         width: 100%;
         padding: 0 3rem;
+    }
+}
+
+@media (min-width: 1680px) {
+    .footer {
+        height: 20rem;
+        padding: 10rem;
+    }
+    .footer p {
+        font-size: 2.5rem;
+    }
+    .footer img {
+        height: 5rem;
+        width: 5rem;
     }
 }

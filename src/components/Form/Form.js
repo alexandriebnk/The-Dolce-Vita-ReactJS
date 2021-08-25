@@ -1,5 +1,4 @@
 import React from "react";
-import classes from "./Form.module.css";
 import CustomGuestsInput from "../CustomGuestsInput/CustomGuestsInput";
 import CustomDateInput from "../CustomDateInput/CustomDateInput";
 import CustomTimeInput from "../CustomTimeInput/CustomTimeInput";
@@ -7,7 +6,7 @@ import Input from "../Input/Input";
 
 const Form = () => {
   return (
-    <form className={classes.form}>
+    <form>
       <CustomGuestsInput />
       <CustomDateInput />
       <CustomTimeInput />

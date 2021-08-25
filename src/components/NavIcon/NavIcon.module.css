@@ -5,3 +5,13 @@
     cursor: pointer;
 }
 
+/* MEDIA QUERIES */
+
+@media (min-width: 1680px) {
+    .nav-icon svg {
+        /*background-color: red;*/
+        height: 8rem;
+        width: 8rem;
+    }  
+}
+
