@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
 import Content from "./components/Content/Content";
-import Carrousel from "./components/Carrousel/Carrousel";
-import CarrouselMobile from "./components/CarrouselMobile/CarrouselMobile";
+import Home from "./components/Home/Home";
 import ReservationFrame from "./components/ReservationFrame/ReservationFrame";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import Footer from "./components/Footer/Footer";
@@ -30,7 +29,7 @@ function App() {
       {menuIsDisplayed ? <Menu /> : null}
       <main>
         <Switch>
-          <Route path="/" exact component={Carrousel} />
+          <Route path="/" exact component={Home} />
           <Route path="/book-a-table" component={ReservationFrame} />
           <Route path="/menu/:category" component={Content} />
           <Route path="*" component={PageNotFound} />

@@ -1,32 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import classes from "./Content.module.css";
 import Slider from "../Slider/Slider";
 import Grid from "../Grid/Grid";
-import datas from "../../assets/datas";
+import MenuContext from "../../store/MenuContext";
 
 const Content = () => {
+  const menu = useContext(MenuContext);
   const { category } = useParams();
-
-  const [windowWidth, setWindowWidth] = useState(0);
-
-  const onResize = () => {
-    setWindowWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", onResize);
-    onResize();
-
-    return () => window.removeEventListener("resize", onResize);
-  }, []);
 
   return (
     <div className={classes.content}>
-      {windowWidth <= 768 ? (
-        <Grid datas={datas.menu[category]} />
+      {window.innerWidth <= 768 ? (
+        <Grid menu={menu[category]} />
       ) : (
-        <Slider datas={datas.menu[category]} />
+        <Slider menu={menu[category]} />
       )}
     </div>
   );

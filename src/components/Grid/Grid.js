@@ -2,16 +2,16 @@ import React from "react";
 import classes from "./Grid.module.css";
 import DishItem from "../DishItem/DishItem";
 
-const Grid = ({ datas }) => {
+const Grid = ({ menu }) => {
   return (
     <div className={classes.grid}>
       <div className={classes["grid-items"]}>
-        {datas.items.map((item, index) => (
+        {menu.items.map((item, index) => (
           <div
             className={classes["grid-items-child"]}
             key={`${item.title}-${index}`}
           >
-            <DishItem item={item} icon={datas.icon} />
+            <DishItem item={item} icon={menu.icon} />
           </div>
         ))}
       </div>

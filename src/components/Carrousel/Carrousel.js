@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import classes from "./Carrousel.module.css";
 //import RestaurantView from "../RestaurantView/RestaurantView";
-import datas from "../../assets/datas";
+import CarrouselContext from "../../store/CarrouselContext";
 
 const Carrousel = () => {
+  const carrousel = useContext(CarrouselContext);
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className={classes.carrousel}>
       <div className={classes["carrousel-main"]}>
-        {datas.carrousel.map((item, index) => (
+        {carrousel.map((item, index) => (
           <div key={`${item.id}`} className={classes["carrousel-view-item"]}>
             <h2
               key={`${item.id}-${index}`}

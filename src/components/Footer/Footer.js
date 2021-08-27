@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import classes from "./Footer.module.css";
-import datas from "../../assets/datas";
+import SiteContext from "../../store/SiteContext";
 
 const Footer = () => {
+  const {
+    address,
+    icons: { instagram },
+  } = useContext(SiteContext);
+
   return (
     <footer className={classes.footer}>
-      <p>414 Bay Avenue, Los Angeles, CA</p>
-      <img src={datas.site.icons.instagram} alt="instagram-icon" draggable="false" />
+      <p>{address}</p>
+      <img src={instagram} alt="instagram-icon" draggable="false" />
     </footer>
   );
 };

@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import classes from "./CarrouselMobile.module.css";
 import RestaurantViewMobile from "../RestaurantViewMobile/RestaurantViewMobile";
-import datas from "../../assets/datas";
+import CarrouselContext from "../../store/CarrouselContext";
 
 const CarrouselMobile = () => {
+  const carrousel = useContext(CarrouselContext);
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className={classes["carrousel-mobile"]}>
       <div className={classes["carrousel-mobile-wrapper"]}>
         <div className={classes["carrousel-mobile-titles"]}>
-          {datas.carrousel.map((item, index) => (
+          {carrousel.map((item, index) => (
             <h2
               key={`${item.type}-${index}`}
               onClick={() => setActiveIndex(index)}
@@ -24,7 +25,7 @@ const CarrouselMobile = () => {
           ))}
         </div>
         <div className={classes["carrousel-mobile-img-container"]}>
-          {datas.carrousel.map((item, index) => (
+          {carrousel.map((item, index) => (
             <img
               src={item.src}
               key={`${item.type}-${index}`}
@@ -37,7 +38,7 @@ const CarrouselMobile = () => {
         </div>
       </div>
       <div className={classes["carrousel-mobile-content"]}>
-        {datas.carrousel.map((item, index) => (
+        {carrousel.map((item, index) => (
           <div
             key={`${item.type}-${index}`}
             className={`${classes["carrousel-mobile-view"]} ${

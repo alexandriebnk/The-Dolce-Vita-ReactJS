@@ -3,14 +3,14 @@ import classes from "./Slider.module.css";
 import Arrow from "../Arrow/Arrow";
 import DishItem from "../DishItem/DishItem";
 
-const Slider = ({ datas }) => {
+const Slider = ({ menu }) => {
   const sliderItems = useRef();
   const slide = useRef();
 
   const nextSlide = () => {
     const width = slide.current.getBoundingClientRect().width + 12;
     const { left, right } = sliderItems.current.getBoundingClientRect();
-    if (window.innerWidth < (right - width)) {
+    if (window.innerWidth < right - width) {
       sliderItems.current.style.transform = `translateX(${left - width}px)`;
     }
   };
@@ -27,20 +27,20 @@ const Slider = ({ datas }) => {
     <div className={classes.slider}>
       <div className={classes["slider-arrows"]}>
         <div className={classes["slider-arrow-left"]} onClick={previousSlide}>
-          <Arrow direction="left"/>
+          <Arrow direction="left" />
         </div>
         <div className={classes["slider-arrow-right"]} onClick={nextSlide}>
-          <Arrow direction="right"/>
+          <Arrow direction="right" />
         </div>
       </div>
       <div className={classes["slider-items"]} ref={sliderItems}>
-        {datas.items.map((item, index) => (
+        {menu.items.map((item, index) => (
           <div
             className={classes["slider-items-child"]}
             ref={slide}
             key={`${item.title}-${index}`}
           >
-            <DishItem item={item} icon={datas.icon} />
+            <DishItem item={item} icon={menu.icon} />
           </div>
         ))}
       </div>
