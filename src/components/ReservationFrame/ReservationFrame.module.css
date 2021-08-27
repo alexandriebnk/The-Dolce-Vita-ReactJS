@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  height: 80vh;
   width: 90%;
   max-width: 144rem;
   margin: auto;
@@ -20,16 +21,19 @@
 
 .reservation-frame {
   position: relative;
-  border: 1px solid black;
+  height: 100%;
   width: 100%;
+  border: 1px solid black;
 }
 
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
   .reservation {
-    height: auto;
-    min-height: 80vh;
+    height: 100%;
+  }
+  .reservation-frame {
+    height: 75vh;
   }
 }
 
@@ -42,6 +46,15 @@
   }
   .reservation-frame {
     border: none;
+  }
+}
+
+@media (min-width: 1680px) {
+  .reservation {
+    max-width: none;
+  }
+  .reservation-p {
+    font-size: 6rem;
   }
 }
 

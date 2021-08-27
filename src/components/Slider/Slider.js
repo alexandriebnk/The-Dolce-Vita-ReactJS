@@ -8,18 +8,16 @@ const Slider = ({ datas }) => {
   const slide = useRef();
 
   const nextSlide = () => {
-    const width = slide.current.getBoundingClientRect().width;
+    const width = slide.current.getBoundingClientRect().width + 12;
     const { left, right } = sliderItems.current.getBoundingClientRect();
-    console.log(window.innerWidth, right);
-    if (window.innerWidth <= right) {
+    if (window.innerWidth < (right - width)) {
       sliderItems.current.style.transform = `translateX(${left - width}px)`;
     }
   };
 
   const previousSlide = () => {
-    const width = slide.current.getBoundingClientRect().width;
-    const { left, right } = sliderItems.current.getBoundingClientRect();
-    console.log(window.innerWidth, right);
+    const width = slide.current.getBoundingClientRect().width + 12;
+    const left = sliderItems.current.getBoundingClientRect().left;
     if (left < 0) {
       sliderItems.current.style.transform = `translateX(${left + width}px)`;
     }

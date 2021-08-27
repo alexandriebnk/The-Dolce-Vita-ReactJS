@@ -358,6 +358,10 @@ const datas = {
     },
   },
   reservation: {
+    description: {
+      title: "Enjoy a bay front moment",
+      text: "A dinner planned ? Romantic, with family or friends by the pool, don't hesitate to book to fully enjoy your moment. The team takes care of everything !",
+    },
     icons: {
       guests: {
         icon: "/images/reservation/svg/guests.svg",

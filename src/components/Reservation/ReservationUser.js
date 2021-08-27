@@ -4,6 +4,7 @@ import Description from "../Description/Description";
 import Form from "../Form/Form";
 import MapView from "../MapView/MapView";
 import ConfirmButton from "../ConfirmButton/ConfirmButton";
+import datas from "../../assets/datas"
 
 const ReservationUser = ({ toggle }) => {
   return (
@@ -11,7 +12,7 @@ const ReservationUser = ({ toggle }) => {
       <div className={classes["reservation-main"]}>
         <div className={classes["reservation-presentation"]}>
           <div className={classes["reservation-description"]}>
-            <Description />
+            <Description title={datas.reservation.description.title} text={datas.reservation.description.text}/>
           </div>
           <div className={classes["reservation-form"]}>
             <Form />

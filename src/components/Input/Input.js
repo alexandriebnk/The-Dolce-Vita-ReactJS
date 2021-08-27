@@ -42,7 +42,7 @@ const Input = (props) => {
       <img
         src={inputDatas.src}
         alt={inputDatas.alt}
-        className={classes["input-img"]}
+        draggable="false"
       />
       <input
         className={classes["input-element"]}

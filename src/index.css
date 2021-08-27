@@ -26,5 +26,6 @@ input:focus {
 
 #app {
   position: relative;
+  overflow: hidden;
 }
 

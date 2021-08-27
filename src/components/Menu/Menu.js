@@ -18,7 +18,7 @@ const Menu = () => {
         {menuItems.map((item) => (
           <li key={item.name} className={classes["menu-item"]}>
             <Link to={`/menu/${item.name}`}>
-              <img src={item.icon} alt={`food-icon-${item.name}`} />
+              <img src={item.icon} alt={`food-icon-${item.name}`} draggable="false"/>
               <h4>{item.name}</h4>
             </Link>
           </li>

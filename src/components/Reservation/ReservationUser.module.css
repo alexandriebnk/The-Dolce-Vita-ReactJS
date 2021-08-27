@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    height: 100%;
     width: 100%;
 }
 
@@ -15,22 +16,30 @@
 
 .reservation-presentation {
     /*background-color: peru;*/
-    padding: 8rem 9rem 0 3rem;
+    padding: 6rem 0 0 4rem;
+}
+
+.reservation-description {
+    /*background-color: yellow;*/
+    width: 70%;
 }
 
 .reservation-form {
     /*background-color: lightseagreen;*/
-    margin: 3rem 0;
+    height: 70%;
+    width: 30%;
+    margin-top: 3rem;
 }
 
 .reservation-btn {
     /*background-color: crimson;*/
     width: 21.6%;
-    margin: 3.6rem auto;
+    margin: 1rem auto;
 }
 
 .reservation-map {
     position: relative;
+    height: 100%;
     width: 40%;
 }
 
@@ -46,22 +55,25 @@
         width: 100%;
     }
     .reservation-presentation {
-        /*background-color: yellow;*/
+        /*background-color: orange;*/
         display: flex;
         flex-direction: row;
+        padding: 5rem 0 0 3rem;
     }
     .reservation-description {
         /*background-color: yellow;*/
-        margin-right: 4rem;
+        width: 55%;
+        margin-right: 2.8rem;
     }
     .reservation-form {
         /*background-color: lightseagreen;*/
+        width: 35%;
         margin-top: 0;
     }
     .reservation-btn {
         /*background-color: crimson;*/
         width: 25.4%;
-        margin: 0rem auto 4rem auto;
+        margin: 2rem auto 4rem auto;
     }
     .reservation-map {
         height: 35rem;
@@ -83,5 +95,29 @@
         /*background-color: crimson;*/
         width: 39%;
         margin: 0 0 4rem 3rem;  
+    }
+}
+
+@media (min-width: 1680px) {
+    .reservation-presentation {
+        /*background-color: peru;*/
+        height: 85%;
+        padding: 10rem 0 0 8rem;
+    }
+    
+    .reservation-description {
+        /*background-color: yellow;*/
+        width: 70%;
+    }
+    
+    .reservation-form {
+        /*background-color: lightseagreen;*/
+        height: 65%;
+        width: 30%;
+        margin-top: 7rem;
+    }
+    .reservation-btn {
+        width: 22.5%;
+        margin-top: 2.2rem;
     }
 }

@@ -3,38 +3,31 @@ import classes from "./CustomTimeInput.module.css";
 import datas from "../../assets/datas";
 
 const CustomTimeInput = () => {
+  const hours = ["12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22"];
+  const minutes = ["00", "15", "30", "45"];
   return (
     <div className={classes.time}>
       <img
         src={datas.reservation.icons.time.icon}
         alt="time"
-        className={classes["time-img"]}
+        draggable="false"
       />
       <div className={classes.hours}>
         <select>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-          <option value="16">16</option>
-          <option value="17">17</option>
-          <option value="18">18</option>
-          <option value="19">19</option>
-          <option value="20">20</option>
-          <option value="21">21</option>
-          <option value="22">22</option>
+          {hours.map((item, index) => 
+            <option key={`key-${item}-${index}`} value={item}>{item}</option>
+          )}
         </select>
       </div>
       <p className={classes.separator}> : </p>
       <div className={classes.minutes}>
         <select>
-          <option value="00">00</option>
-          <option value="15">15</option>
-          <option value="30">30</option>
-          <option value="45">45</option>
+        {minutes.map((item, index) => 
+            <option key={`key-${item}-${index}`} value={item}>{item}</option>
+          )}
         </select>
       </div>
-      <p>pm</p>
+      <p className={classes.pm}>pm</p>
     </div>
   );
 };

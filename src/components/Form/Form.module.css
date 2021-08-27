@@ -1,0 +1,27 @@
+.form div {
+    /*background-color: lightblue;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 2.5rem;
+}
+
+.form img {
+    /*background-color: orchid;*/
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 3rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1680px) {
+    .form div {
+        height: 6rem;
+    }
+    .form img {
+        height: 6rem;
+        width: 6rem;
+        margin-right: 5rem;
+    }
+}

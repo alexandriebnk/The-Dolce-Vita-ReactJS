@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import classes from "./Carrousel.module.css";
-import RestaurantView from "../RestaurantView/RestaurantView";
+//import RestaurantView from "../RestaurantView/RestaurantView";
 import datas from "../../assets/datas";
 
 const Carrousel = () => {
@@ -29,15 +29,16 @@ const Carrousel = () => {
                   index === activeIndex ? classes["active-img"] : null
                 }`}
                 alt={`${item.type}`}
+                draggable="false"
               />
-              <div
+              {/*<div
                 key={`${item.title}-${index}`}
                 className={`${classes["carrousel-view-infos-layout"]} ${
                   index === activeIndex ? classes["active-layout"] : null
                 }`}
               >
                 <RestaurantView item={item} key={`${item.type}-${index}`} />
-              </div>
+              </div>*/}
             </div>
           </div>
         ))}

@@ -15,6 +15,7 @@ const Header = ({ displayMenu, menuIsDisplayed }) => {
             src={datas.site.icons.logo}
             className={classes.logo}
             alt="logo"
+            draggable="false"
           />
         </h1>
       </Link>

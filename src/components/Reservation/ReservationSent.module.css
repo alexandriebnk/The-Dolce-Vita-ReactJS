@@ -1,4 +1,10 @@
 .reservation-done {
+    /*background-color: orchid;*/
+    height: 100%;
+    width: 100%;
+}
+
+.reservation-done-message {
     /*background-color: cyan;*/
     position: absolute;
     width: 40%;
@@ -25,7 +31,7 @@
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
-    .reservation-done {
+    .reservation-done-message {
         width: 70%;
     }
 }

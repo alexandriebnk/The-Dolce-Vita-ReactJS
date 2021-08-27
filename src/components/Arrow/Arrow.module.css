@@ -6,3 +6,12 @@
 .right {
     transform: rotate(180deg);
 }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1680px) {
+    .arrow {
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+}

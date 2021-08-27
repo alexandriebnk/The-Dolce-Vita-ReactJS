@@ -1,16 +1,5 @@
 .date {
-    /*background-color: indianred;*/
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 2.5rem;
-}
-
-.date-img {
-    /*background-color: orchid;*/
-     height: 2.5rem;
-     width: 2.5rem;
-     margin-right: 3rem;
+    margin-bottom: 2.2rem;
 }
 
 .day {
@@ -19,4 +8,27 @@
 
 .month {
     margin-right: 1.2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1680px) {
+    .date {
+        margin-bottom: 4rem;
+    }
+    .date select {
+        /*background-color: palevioletred;*/
+        height: 4rem;
+        font-size: 2rem;
+        text-align-last: center;
+    }
+    .day select {
+        width: 3rem;
+    }
+    .month select {
+        width: 11rem;
+    }
+    .year select {
+        width: 6rem;
+    }
 }

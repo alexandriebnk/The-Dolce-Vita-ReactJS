@@ -1,16 +1,5 @@
 .guests {
-    /*background-color: lightblue;*/
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 2.5rem;
-}
-
-.guests-img {
-    /*background-color: grey;*/
-    height: 2.5rem;
-     width: 2.5rem;
-    margin-right: 3rem;
+    margin-bottom: 2.2rem;
 }
 
 .guests-count {
@@ -36,4 +25,23 @@
     color: #A66D03;
     font-size: 1.4rem;
     cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1680px) {
+    .guests {
+        margin-bottom: 4rem;
+    }
+    .guests-count {
+        line-height: .6rem;
+        width: 8rem; 
+    }
+    .minus, 
+    .plus {
+        font-size: 3rem;
+    }
+    .number {
+        font-size: 2rem;
+    }
 }

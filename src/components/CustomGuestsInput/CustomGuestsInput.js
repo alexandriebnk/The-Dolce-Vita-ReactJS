@@ -8,7 +8,7 @@ const CustomGuestsInput = () => {
       <img
         src={datas.reservation.icons.guests.icon}
         alt="guests"
-        className={classes["guests-img"]}
+        draggable="false"
       />
       <div className={classes["guests-count"]}>
         <p className={classes.minus}>-</p>
