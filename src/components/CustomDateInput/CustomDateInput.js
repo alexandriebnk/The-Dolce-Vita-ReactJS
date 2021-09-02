@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import classes from "./CustomDateInput.module.css";
-import datas from "../../assets/datas";
+import ReservationContext from "../../store/ReservationContext";
 
 const CustomDateInput = () => {
+  const {
+    icons: { calendar },
+  } = useContext(ReservationContext);
+
   const getIndex = (index) => {
     return index < 9 ? "0" + (index + 1) : index + 1;
   };
@@ -23,11 +27,7 @@ const CustomDateInput = () => {
 
   return (
     <div className={classes.date}>
-      <img
-        src={datas.reservation.icons.calendar.icon}
-        alt="calendar"
-        draggable="false"
-      />
+      <img src={calendar} alt="calendar" draggable="false" />
       <div className={classes.day}>
         <select>
           {[...Array(31)].map((_, index) => (

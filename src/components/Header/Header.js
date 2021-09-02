@@ -1,18 +1,58 @@
-import React, { useContext } from "react";
+import React, { useEffect, useContext, useRef } from "react";
+import gsap from "gsap";
 import { Link } from "react-router-dom";
 import classes from "./Header.module.css";
 import BookingLink from "../BookingLink/BookingLink";
 import NavIcon from "../NavIcon/NavIcon";
 import SiteContext from "../../store/SiteContext";
+import NavigationContext from "../../store/NavigationContext";
 
-const Header = ({ displayMenu, menuIsDisplayed }) => {
+const Header = () => {
   const {
     icons: { logo },
   } = useContext(SiteContext);
+  const { isLoaded } = useContext(NavigationContext);
+
+  const tlHeader = useRef();
+  const navIcon = useRef();
+  const logoSite = useRef();
+  const link = useRef();
+
+  useEffect(() => {
+    if (isLoaded) {
+      tlHeader.current.play();
+    }
+  }, [isLoaded]);
+
+  useEffect(() => {
+    tlHeader.current = gsap
+      .timeline({ paused: true })
+      .add("showHeader")
+      .fromTo(
+        navIcon.current,
+        { y: "-2.5rem", opacity: "0" },
+        { duration: "1.5", y: "0", opacity: "1" },
+        "showHeader"
+      )
+      .fromTo(
+        logoSite.current,
+        { y: "-2.5rem", opacity: "0" },
+        { duration: "1.5", y: "0", opacity: "1" },
+        "showHeader"
+      )
+      .fromTo(
+        link.current,
+        { y: "-2.5rem", opacity: "0" },
+        { duration: "1.5", y: "0", opacity: "1" },
+        "showHeader"
+      );
+  }, []);
 
   return (
     <header className={classes.header}>
-      <NavIcon displayMenu={displayMenu} menuIsDisplayed={menuIsDisplayed} />
+      <div className={classes["nav-icon"]} ref={navIcon}>
+        <NavIcon />
+      </div>
       <Link to="/">
         <h1 aria-label="The Dolce Vita">
           <img
@@ -20,10 +60,11 @@ const Header = ({ displayMenu, menuIsDisplayed }) => {
             className={classes.logo}
             alt="logo"
             draggable="false"
+            ref={logoSite}
           />
         </h1>
       </Link>
-      <div className={classes.link}>
+      <div className={classes.link} ref={link}>
         <BookingLink />
       </div>
     </header>

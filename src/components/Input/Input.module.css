@@ -9,6 +9,7 @@
 
 .input-element::placeholder {
     color: rgb(158, 158, 158, .7);
+    font-size: 1.2rem;
 }
 
 /* MEDIA QUERIES */

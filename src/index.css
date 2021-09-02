@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-html {
+html, 
+::placeholder {
   font-family: 'Raleway';
   font-size: 62.5%; /*1rem = 10px*/
 }

@@ -1,21 +1,48 @@
-import React, { useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
+import gsap from "gsap";
 import classes from "./NavIcon.module.css";
+import NavigationContext from "../../store/NavigationContext";
 
-const NavIcon = ({ displayMenu, menuIsDisplayed }) => {
+const NavIcon = () => {
+  const { menuIsOpen, setMenuIsOpen } = useContext(NavigationContext);
+
   const forkRef = useRef();
   const spoonRef = useRef();
 
+  const openNav = () => {
+    gsap.to(forkRef.current, {
+      duration: ".3",
+      rotation: "45deg",
+      translateY: "100%",
+      transformOrigin: "50% 50%",
+    });
+    gsap.to(spoonRef.current, {
+      duration: ".3",
+      rotation: "-45deg",
+      translateY: "-40%",
+      transformOrigin: "50% 50%",
+    });
+  };
+
+  const closeNav = () => {
+    gsap.to(forkRef.current, {
+      duration: ".5",
+      rotation: "0deg",
+      translateY: "0",
+    });
+    gsap.to(spoonRef.current, {
+      duration: ".5",
+      rotation: "0deg",
+      translateY: "0",
+    });
+  };
+
+  useEffect(() => {
+    menuIsOpen ? openNav() : closeNav();
+  }, [menuIsOpen]);
+
   const onClick = () => {
-    displayMenu();
-    if (menuIsDisplayed) {
-      forkRef.current.style.transform = "rotate(0deg)";
-      spoonRef.current.style.transform = "rotate(0deg)";
-    } else {
-      forkRef.current.style.transform = "rotate(45deg) translateY(10%)";
-      spoonRef.current.style.transform = "rotate(-45deg) translateY(-10%)";
-      forkRef.current.style.transformOrigin = "center";
-      spoonRef.current.style.transformOrigin = "center";
-    }
+    menuIsOpen ? setMenuIsOpen(false) : setMenuIsOpen(true);
   };
 
   return (

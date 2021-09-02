@@ -7,36 +7,47 @@ import Home from "./components/Home/Home";
 import ReservationFrame from "./components/ReservationFrame/ReservationFrame";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import Footer from "./components/Footer/Footer";
+import NavigationContext from "./store/NavigationContext";
 
 function App() {
-  const [menuIsDisplayed, setMenuIsDisplayed] = useState(false);
-
-  const displayMenu = () => {
-    setMenuIsDisplayed(!menuIsDisplayed);
-  };
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   useEffect(() => {
-    if (menuIsDisplayed) {
+    setIsLoaded(true);
+  }, [setIsLoaded]);
+
+  useEffect(() => {
+    if (menuIsOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
-  }, [menuIsDisplayed]);
+  }, [menuIsOpen]);
 
   return (
-    <Router>
-      <Header displayMenu={displayMenu} menuIsDisplayed={menuIsDisplayed} />
-      {menuIsDisplayed ? <Menu /> : null}
-      <main>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/book-a-table" component={ReservationFrame} />
-          <Route path="/menu/:category" component={Content} />
-          <Route path="*" component={PageNotFound} />
-        </Switch>
-      </main>
-      <Footer />
-    </Router>
+    <NavigationContext.Provider
+      value={{
+        isLoaded,
+        setIsLoaded,
+        menuIsOpen,
+        setMenuIsOpen,
+      }}
+    >
+      <Router>
+        <Header />
+        <Menu />
+        <main>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/book-a-table" component={ReservationFrame} />
+            <Route path="/menu/:category" component={Content} />
+            <Route path="*" component={PageNotFound} />
+          </Switch>
+        </main>
+        <Footer />
+      </Router>
+    </NavigationContext.Provider>
   );
 }
 

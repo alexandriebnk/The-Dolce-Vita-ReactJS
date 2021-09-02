@@ -3,7 +3,7 @@
     width: 3rem;
 }
 
-.right {
+.left {
     transform: rotate(180deg);
 }
 

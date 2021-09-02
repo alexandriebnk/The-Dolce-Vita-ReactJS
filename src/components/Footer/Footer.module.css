@@ -9,8 +9,13 @@
     padding: 4.5rem;
 }
 
-.footer p {
+.footer-address {
     font-size: 1.2rem;
+    opacity: 0;
+}
+
+.footer-icon {
+    opacity: 0;
 }
 
 /* MEDIA QUERIES */

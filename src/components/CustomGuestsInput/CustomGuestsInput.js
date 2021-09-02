@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import classes from "./CustomGuestsInput.module.css";
-import datas from "../../assets/datas";
+import ReservationContext from "../../store/ReservationContext";
 
 const CustomGuestsInput = () => {
+  const {
+    icons: { guests },
+  } = useContext(ReservationContext);
+
   return (
     <div className={classes.guests}>
-      <img
-        src={datas.reservation.icons.guests.icon}
-        alt="guests"
-        draggable="false"
-      />
+      <img src={guests} alt="guests" draggable="false" />
       <div className={classes["guests-count"]}>
         <p className={classes.minus}>-</p>
         <p className={classes.number}>1</p>

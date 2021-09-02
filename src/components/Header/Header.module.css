@@ -7,13 +7,22 @@
     align-items: center;
     height: 12rem;
     width: 100%;
+    top: 0;
     padding: 4.5rem;
     z-index: 200; 
 }
 
+.nav-icon {
+    opacity: 0;
+}
+
 .logo {
-    /*background-color: yellow;*/
     cursor: pointer;
+    opacity: 0;
+}
+
+.link {
+    opacity: 0;
 }
 
 /* MEDIA QUERIES */
