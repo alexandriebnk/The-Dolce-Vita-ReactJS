@@ -1,5 +1,4 @@
 .nav-icon {
-    /*background-color: red;*/
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -7,9 +6,8 @@
 
 /* MEDIA QUERIES */
 
-@media (min-width: 1680px) {
+@media (min-width: 2560px) {
     .nav-icon svg {
-        /*background-color: red;*/
         height: 8rem;
         width: 8rem;
     }  

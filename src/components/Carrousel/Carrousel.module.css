@@ -1,32 +1,25 @@
 .carrousel {
-    /*background-color: lightgreen;*/
-    position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
 .carrousel-main {
-    /*background-color: pink;*/
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-    width: 45%;
-    min-width: 65rem;
+    height: calc(100vh - 24rem);
+    margin: auto;
+    width: fit-content;
 }
 
 .carrousel-view-item {
-    /*background-color: blue;*/
     display: flex;
     flex-direction: row;
 }
 
 .carrousel-view-title {
-    /*background-color: aquamarine;*/
     color: rgba(0, 0, 0, .7);
+    height: fit-content;
+    margin-bottom: auto;
     font-size: 3rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -60,13 +53,23 @@
 }
 
 .carrousel-view-img {
-    display: none;
+    position: absolute;
+    height: 100%; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
 
-.active-img {
-    display: block !important;
-    height: 100%; 
+.carrousel-view-img-wrapper {
+    display: none;
+    position: relative;
+    height: 100%;
     width: 50rem;
+}
+
+.active-wrapper {
+    display: block !important;
 }
 
 .carrousel-view-infos-layout {
@@ -88,10 +91,11 @@
 
 @media (max-width: 768px) {
     .carrousel {
+        height: 75vh;
         width: 100%;
     }
     .carrousel-main {
-        width: 90%;
+        width: 85%;
     }
     .carrousel-view-title { 
         font-size: 3.5rem;
@@ -107,8 +111,9 @@
     }
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 2560px) {
     .carrousel-main {
+        height: calc(100vh - 40rem);
         width: 50%;
     }
     .carrousel-view-title {
@@ -126,7 +131,7 @@
         font-size: 5rem !important;
         margin-bottom: 2.5rem !important;
     }
-    .carrousel-view-img {
+    .carrousel-view-img-wrapper {
         width: 100rem;
     }
 }

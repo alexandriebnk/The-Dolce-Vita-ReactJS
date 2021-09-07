@@ -1,5 +1,4 @@
 .carrousel-mobile-wrapper {
-    /*background-color: blueviolet;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,7 +8,6 @@
 }
 
 .carrousel-mobile-titles {
-    /*background-color: aquamarine;*/
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -41,7 +39,6 @@
 }
 
 .carrousel-mobile-img-container {
-    /*background-color: brown;*/
     position: relative;
     height: 55rem;
     width: 80%;

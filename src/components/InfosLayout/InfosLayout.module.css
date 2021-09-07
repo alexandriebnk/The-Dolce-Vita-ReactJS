@@ -1,5 +1,4 @@
 .infos-layout {
-    /*background-color: palevioletred;*/
     display: block;
     position: relative;
     height: 100%;
@@ -7,14 +6,12 @@
 }
 
 .infos-layout-description {
-    /*background-color: crimson;*/
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .infos-layout-price {
-    /*background-color: violet;*/
     color: #A66D03;
     font-size: 1.2rem;
     font-weight: 700;
@@ -27,7 +24,6 @@
 }
 
 .infos-layout-icon {
-    /*background-color: violet;*/
     height: 5rem;
     width: 5rem;
 }
@@ -46,17 +42,14 @@
         flex-direction: row;
     }
     .infos-layout-description {
-        /*background-color: deepskyblue;*/
         font-size: 1.5rem;
         line-height: 2.5rem;
         height: 100%;
         width: 83%;
         top: 42%;
-        left: 20%;
-        
+        left: 20%; 
     }
     .infos-layout-icon-container {
-        /*background-color: deeppink;*/
         position: relative;
         height: 6rem;
         width: 6rem;
@@ -67,7 +60,7 @@
     } 
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 2560px) {
     .infos-layout-icon {
         height: 10rem;
         width: 10rem;

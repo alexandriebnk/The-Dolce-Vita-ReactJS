@@ -7,7 +7,6 @@ const DishItem = ({ item, icon }) => {
   const layout = useRef();
 
   const showLayout = () => {
-    console.log("enter");
     gsap.fromTo(
       layout.current,
       { opacity: "0" },
@@ -16,7 +15,6 @@ const DishItem = ({ item, icon }) => {
   };
 
   const hideLayout = () => {
-    console.log("exit");
     gsap.fromTo(
       layout.current,
       { opacity: "1" },

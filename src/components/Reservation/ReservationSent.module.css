@@ -1,11 +1,9 @@
 .reservation-done {
-    /*background-color: orchid;*/
     height: 100%;
     width: 100%;
 }
 
 .reservation-done-message {
-    /*background-color: cyan;*/
     position: absolute;
     width: 40%;
     top: 50%;
@@ -15,7 +13,6 @@
 }
 
 .reservation-img {
-    /*background-color: crimson;*/
     color: #A66D03;
     height: 6rem;
     width: 6rem;
@@ -23,8 +20,7 @@
 }
 
 .reservation-close {
-    /*background-color: green;*/
-    width: 8%;
+    width: fit-content;
     margin: 3.5rem auto 0 auto;
 }
 

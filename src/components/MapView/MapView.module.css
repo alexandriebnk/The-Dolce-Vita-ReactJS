@@ -21,7 +21,6 @@
 
 @media (max-width: 768px) {
     .map {
-        /*background-color: pink;*/
         height: 100%;
         width: 100%;
         bottom: 0;

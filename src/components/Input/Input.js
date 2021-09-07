@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Input.module.css";
 
-const Input = ({ type, icon, placeholder }) => {
+const Input = ({ type, icon, placeholder, onChange }) => {
   return (
     <div className={classes.input}>
       <img src={icon} alt={icon} draggable="false" />
@@ -9,6 +9,7 @@ const Input = ({ type, icon, placeholder }) => {
         className={classes["input-element"]}
         type={type}
         placeholder={placeholder}
+        onChange={onChange}
       />
     </div>
   );

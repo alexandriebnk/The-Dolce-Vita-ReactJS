@@ -1,5 +1,4 @@
 .restaurant-view {
-    /*background-color: yellow;*/
     position: relative;
     height: 100%;
     width: 100%;
@@ -20,7 +19,7 @@
 
 /* MEDIA QUERIES */
 
-@media (min-width: 1680px) {
+@media (min-width: 2560px) {
     .restaurant-view-infos-layout {  
         outline: 10px solid white;
         outline-offset: 1rem;

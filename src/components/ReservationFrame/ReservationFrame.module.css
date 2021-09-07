@@ -1,16 +1,14 @@
 .reservation {
-  /*background-color: pink;*/
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  height: 80vh;
+  height: calc(100vh - 24rem);
   width: 90%;
   max-width: 144rem;
   margin: auto;
 }
 
 .reservation-p {
-  /*background-color: red;*/
   display: block;
   font-size: 4rem;
   writing-mode: tb-rl;
@@ -35,26 +33,32 @@
   .reservation-frame {
     height: 75vh;
   }
+  .reservation-p {
+    font-size: 4.5rem;
+  }
 }
 
 @media (max-width: 576px) {
   .reservation {
+    height: inherit;
     width: 100%;
   }
   .reservation-p {
       display: none;
   }
   .reservation-frame {
+    height: fit-content;
     border: none;
   }
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 2560px) {
   .reservation {
+    height: calc(100vh - 40rem);
     max-width: none;
   }
   .reservation-p {
-    font-size: 6rem;
+    font-size: 8rem;
   }
 }
 

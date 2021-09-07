@@ -13,13 +13,13 @@ const NavIcon = () => {
     gsap.to(forkRef.current, {
       duration: ".3",
       rotation: "45deg",
-      translateY: "100%",
+      y: "100%",
       transformOrigin: "50% 50%",
     });
     gsap.to(spoonRef.current, {
       duration: ".3",
       rotation: "-45deg",
-      translateY: "-40%",
+      y: "-40%",
       transformOrigin: "50% 50%",
     });
   };
@@ -28,12 +28,12 @@ const NavIcon = () => {
     gsap.to(forkRef.current, {
       duration: ".5",
       rotation: "0deg",
-      translateY: "0",
+      y: "0",
     });
     gsap.to(spoonRef.current, {
       duration: ".5",
       rotation: "0deg",
-      translateY: "0",
+      y: "0",
     });
   };
 

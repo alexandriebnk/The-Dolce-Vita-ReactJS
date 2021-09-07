@@ -1,5 +1,4 @@
 .footer {
-    /*background-color: plum;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,6 +11,7 @@
 .footer-address {
     font-size: 1.2rem;
     opacity: 0;
+    transform: translateY(2.5rem);
 }
 
 .footer-icon {
@@ -33,9 +33,9 @@
     }
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 2560px) {
     .footer {
-        height: 20rem;
+        height: 12rem;
         padding: 10rem;
     }
     .footer p {

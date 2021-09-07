@@ -12,6 +12,7 @@ const Header = () => {
     icons: { logo },
   } = useContext(SiteContext);
   const { isLoaded } = useContext(NavigationContext);
+  const { menuIsOpen, setMenuIsOpen } = useContext(NavigationContext);
 
   const tlHeader = useRef();
   const navIcon = useRef();
@@ -48,6 +49,10 @@ const Header = () => {
       );
   }, []);
 
+  const onClick = () => {
+    menuIsOpen && setMenuIsOpen(false);
+  };
+
   return (
     <header className={classes.header}>
       <div className={classes["nav-icon"]} ref={navIcon}>
@@ -61,6 +66,7 @@ const Header = () => {
             alt="logo"
             draggable="false"
             ref={logoSite}
+            onClick={onClick}
           />
         </h1>
       </Link>

@@ -1,5 +1,4 @@
 .restaurant-view-mobile {
-    /*background-color: darkorange;*/
     height: 35rem;
     width: 85%;
     position: relative;
@@ -8,7 +7,6 @@
 }
 
 .restaurant-view-mobile-infos-layout {
-    /*background-color: darkviolet;*/
     height: 70%;
     width: 100%;
 }

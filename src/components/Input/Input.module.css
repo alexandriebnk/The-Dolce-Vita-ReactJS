@@ -1,10 +1,13 @@
 .input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 2.2rem;
 }
 
 .input-element {
-    /*background-color: pink;*/
     border: none;  
+    font-size: 1.2rem;
 }
 
 .input-element::placeholder {
@@ -14,18 +17,22 @@
 
 /* MEDIA QUERIES */
 
-@media (min-width: 1680px) {
+@media (min-width: 2560px) {
     .input {
-        /*background-color: orange;*/
         margin-bottom: 4rem;
     }
-    .input-element {
-        /*background-color: pink;*/
+    .input img {
         height: 5rem;
-        width: 80%;
+        width: 5rem;
+    }
+    .input-element {
+        height: 5rem;
+        width: 30%;
+        font-size: 2.5rem;
+        margin-left: 2rem;
     }
     .input-element::placeholder {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 

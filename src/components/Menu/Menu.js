@@ -49,7 +49,7 @@ const Menu = () => {
             onClick={() => hideMenu()}
             ref={(el) => items.current.push(el)}
           >
-            <Link to={`/menu/${item.name}`}>
+            <Link to={`/menu/${item.name}`} className={classes["menu-link"]}>
               <img
                 src={item.icon}
                 alt={`food-icon-${item.name}`}

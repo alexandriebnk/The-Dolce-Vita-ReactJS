@@ -61,18 +61,22 @@ const Carrousel = () => {
               {item.type}
             </h2>
             <div className={classes["carrousel-view-content"]}>
-              <img
-                src={item.src}
-                key={`${item.type}-${index}`}
-                onMouseEnter={showLayout}
-                onMouseLeave={hideLayout}
-                className={`${classes["carrousel-view-img"]} ${
-                  index === activeIndex ? classes["active-img"] : null
+              <div
+                className={`${classes["carrousel-view-img-wrapper"]} ${
+                  index === activeIndex ? classes["active-wrapper"] : null
                 }`}
-                alt={`${item.type}`}
-                draggable="false"
                 ref={(el) => images.current.push(el)}
-              />
+              >
+                <img
+                  src={item.src}
+                  key={`${item.type}-${index}`}
+                  onMouseEnter={showLayout}
+                  onMouseLeave={hideLayout}
+                  className={classes["carrousel-view-img"]}
+                  alt={`${item.type}`}
+                  draggable="false"
+                />
+              </div>
               <div
                 key={`${item.title}-${index}`}
                 className={`${classes["carrousel-view-infos-layout"]} ${

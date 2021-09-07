@@ -1,5 +1,4 @@
 .reservation-user {
-    /*background-color: pink;*/
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -8,33 +7,20 @@
 }
 
 .reservation-main {
-    /*background-color: cyan;*/
     display: flex;
     flex-direction: column;
     width: 60%;
-}
-
-.reservation-presentation {
-    /*background-color: peru;*/
-    padding: 6rem 0 0 4rem;
+    padding: 6rem 4rem 0 4rem;
 }
 
 .reservation-description {
-    /*background-color: yellow;*/
     width: 70%;
 }
 
 .reservation-form {
-    /*background-color: lightseagreen;*/
     height: 70%;
-    width: 30%;
+    width: 100%;
     margin-top: 3rem;
-}
-
-.reservation-btn {
-    /*background-color: crimson;*/
-    width: 21.6%;
-    margin: 1rem auto;
 }
 
 .reservation-map {
@@ -47,73 +33,65 @@
 
 @media (max-width: 768px) {
     .reservation-user {
-        /*background-color: pink;*/
         flex-direction: column;
-    }
-    .reservation-main {
-        /*background-color: cyan;*/
+        height: 100%;
         width: 100%;
     }
-    .reservation-presentation {
-        /*background-color: orange;*/
+    .reservation-main {
         display: flex;
         flex-direction: row;
+        height: 55%;
+        width: 100%;
         padding: 5rem 0 0 3rem;
     }
     .reservation-description {
-        /*background-color: yellow;*/
         width: 55%;
         margin-right: 2.8rem;
     }
     .reservation-form {
-        /*background-color: lightseagreen;*/
-        width: 35%;
-        margin-top: 0;
-    }
-    .reservation-btn {
-        /*background-color: crimson;*/
-        width: 25.4%;
-        margin: 2rem auto 4rem auto;
+        width: 40%;
+        margin-top: 0;  
     }
     .reservation-map {
-        height: 35rem;
+        height: 45%;
         width: 100%;
     }
 }
 
 @media (max-width: 576px) {
-    .reservation-presentation {
-        /*background-color: yellow;*/
+    .reservation-main {
         flex-direction: column;
-        padding: 3rem 0 0 3rem;
+        height: 100%;
+        padding: 3rem 0 3rem 3rem;
+    }
+    .reservation-description {
+        width: 90%;
     }
     .reservation-form {
-        /*background-color: darkolivegreen;*/
+        height: 100%;
+        width: 90%;
         margin: 3rem 0;
     }
     .reservation-btn {
-        /*background-color: crimson;*/
         width: 39%;
         margin: 0 0 4rem 3rem;  
     }
+    .reservation-map {
+        height: 40rem;
+    }
 }
 
-@media (min-width: 1680px) {
-    .reservation-presentation {
-        /*background-color: peru;*/
-        height: 85%;
+@media (min-width: 2560px) {
+    .reservation-main {
+        height: 100%;
         padding: 10rem 0 0 8rem;
     }
-    
     .reservation-description {
-        /*background-color: yellow;*/
-        width: 70%;
+        width: 80%;
     }
-    
     .reservation-form {
-        /*background-color: lightseagreen;*/
         height: 65%;
-        width: 30%;
+        width: 90%;
         margin-top: 7rem;
     }
     .reservation-btn {
