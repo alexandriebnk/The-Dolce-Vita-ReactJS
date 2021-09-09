@@ -9,8 +9,10 @@
 .reservation-main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: fit-content;
     width: 60%;
-    padding: 6rem 4rem 0 4rem;
+    padding-top: 6rem;
 }
 
 .reservation-description {
@@ -18,9 +20,7 @@
 }
 
 .reservation-form {
-    height: 70%;
     width: 100%;
-    margin-top: 3rem;
 }
 
 .reservation-map {
@@ -40,9 +40,10 @@
     .reservation-main {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
         height: 55%;
         width: 100%;
-        padding: 5rem 0 0 3rem;
+        padding: 5rem 0 3rem 3rem;
     }
     .reservation-description {
         width: 55%;

@@ -15,6 +15,7 @@
     left: 0;
     mix-blend-mode: color;
     z-index: 10;
+    pointer-events: none;
 }
 
 /* MEDIA QUERIES */

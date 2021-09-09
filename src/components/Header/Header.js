@@ -71,7 +71,7 @@ const Header = () => {
         </h1>
       </Link>
       <div className={classes.link} ref={link}>
-        <BookingLink />
+        <BookingLink onClick={onClick} />
       </div>
     </header>
   );

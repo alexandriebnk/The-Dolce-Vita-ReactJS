@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import classes from "./ReservationUser.module.css";
 import Description from "../Description/Description";
 import Form from "../Form/Form";
@@ -7,6 +7,10 @@ import ReservationContext from "../../store/ReservationContext";
 
 const ReservationUser = ({ toggle }) => {
   const { description } = useContext(ReservationContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={classes["reservation-user"]}>

@@ -56,6 +56,14 @@
 @media (max-width: 576px) {
     .menu-item {
         width: 50%; 
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .menu-item h4 {
+        margin-top: 0;  
+    }
+    .menu-link img {
+        width: 6rem;
     }
 }
 

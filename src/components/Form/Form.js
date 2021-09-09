@@ -67,27 +67,31 @@ const Form = ({ toggle }) => {
   return (
     <form className={classes.form}>
       <div className={classes["form-inputs"]}>
-        <CustomGuestsInput />
-        <CustomDateInput />
-        <CustomTimeInput />
-        <Input
-          type="text"
-          icon={nameIcon}
-          placeholder="Name"
-          onChange={onNameChange}
-        />
-        <Input
-          type="tel"
-          icon={phoneIcon}
-          placeholder="650-560-75644"
-          onChange={onPhoneChange}
-        />
-        <Input
-          type="email"
-          icon={emailIcon}
-          placeholder="your@email.com"
-          onChange={onEmailChange}
-        />
+        <div className={classes["form-inputs-left"]}>
+          <CustomGuestsInput />
+          <CustomDateInput />
+          <CustomTimeInput />
+        </div>
+        <div className={classes["form-inputs-right"]}>
+          <Input
+            type="text"
+            icon={nameIcon}
+            placeholder="Name"
+            onChange={onNameChange}
+          />
+          <Input
+            type="tel"
+            icon={phoneIcon}
+            placeholder="650-560-75644"
+            onChange={onPhoneChange}
+          />
+          <Input
+            type="email"
+            icon={emailIcon}
+            placeholder="your@email.com"
+            onChange={onEmailChange}
+          />
+        </div>
       </div>
       <div className={classes["form-btn"]} ref={button}>
         <ConfirmButton toggle={toggle} />

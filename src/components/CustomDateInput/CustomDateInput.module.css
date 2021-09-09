@@ -6,18 +6,14 @@
 }
 
 .day {
-    margin-right: 1.2rem;
-}
-
-.month {
-    margin-right: 1.2rem;
+    margin-right: 1rem;
 }
 
 .day select,
 .month select,
 .year select {
     font-size: 1.2rem;
-    text-align-last: center;
+    text-align: center;
 }
 
 /* MEDIA QUERIES */

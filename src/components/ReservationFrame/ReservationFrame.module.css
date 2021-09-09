@@ -20,6 +20,7 @@
 .reservation-frame {
   position: relative;
   height: 100%;
+  min-height: 44rem;
   width: 100%;
   border: 1px solid black;
 }
@@ -32,6 +33,7 @@
   }
   .reservation-frame {
     height: 75vh;
+    min-height: unset;
   }
   .reservation-p {
     font-size: 4.5rem;

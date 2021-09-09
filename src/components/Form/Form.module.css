@@ -4,7 +4,10 @@
 
 .form-inputs {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: 5rem auto;
 }
 
 .form img {
@@ -23,12 +26,20 @@
 @media (max-width: 768px) {
     .form-inputs {
         position: relative;
+        flex-direction: column;
+        margin: 0 auto;
     }
     .form-btn {
         position: absolute;
         width: auto;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 576px) {
+    .form-inputs {
+        margin: 0;
     }
 }
 

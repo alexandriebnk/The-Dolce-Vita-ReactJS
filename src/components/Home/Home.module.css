@@ -4,6 +4,12 @@
 
 /* MEDIA QUERIES */
 
+@media (max-width: 576px) {
+    .home {
+        height: 100%;
+    }
+}
+
 @media (min-width: 2560px) {
     .home {
         height: calc(100vh - 40rem);
