@@ -118,18 +118,22 @@
     }
     .carrousel-view-title {
         font-size: 6rem;
+        margin-right: 1.5rem !important;
+        margin-left: 3rem;
     }
     .carrousel-view-title span {
         font-size: 3.5rem;
-        margin-bottom: 2rem;
+        margin: 0 1.5rem 2rem -2rem;
     }
     .active-title {
         font-size: 8rem !important;
-        margin-right: 1.5rem !important;
+        margin-right: 5rem !important;
     }
     .active-title span {
         font-size: 5rem !important;
         margin-bottom: 2.5rem !important;
+        margin-left: -3rem !important;
+        margin-right: 2rem !important;
     }
     .carrousel-view-img-wrapper {
         width: 100rem;
